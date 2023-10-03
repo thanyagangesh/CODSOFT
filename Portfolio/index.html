@@ -1,68 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Thanya Gangesh</h1>
-            <p>Engineering Student | Web developer</p>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Potfolio</title>
+    <style>
+        /* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <img src="my_photo.jpg" alt="Your Photo">
-            <p>I'm a passionate web developer and my goal is to deliver high-quality, responsive, and visually appealing digital solutions that meet the needs of clients and users.</p>
+/* Apply some basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+ul.skill-list, ul.lang-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.skill-list li, ul.lang-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style the contact info */
+section#sec-2 div:first-child p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Add some spacing between project and additional sections */
+div h3 {
+    margin-top: 20px;
+}
+
+/* Style the project and additional sections */
+div > div {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Style the "Skills" and "Languages" sections */
+.skill-list li, .lang-list li {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Highlight the contact links */
+section#sec-2 div:first-child a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+section#sec-2 div:first-child a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #f9f9f9;
+    padding: 10px 0;
+}
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="sec-1">
+        <h1>Thanya Gangesh</h1>
+        <p>
+          Passionate about Computer Science and Programming, Quick Learner,
+          Interested in Problem solving
+        </p>
+        </section> 
+    </main>
+        <div>
+        <section id="sec-1">
+          <h3>Projects</h3>
+          <div>
+            <h4>Hotel Management System</h4>
+            <p>
+              A hotel management system to understand RDBMS done using MySql for backend, bootstrap for front-end and integrated using Php.
+            </p>
+          </div>
         </div>
     </section>
+        <div>
+        <section id="sec-1">
+          <h3>Additional</h3>
+          <P> A member of the core team of GDSC JSSSTU. Incharge of Communication and Outreach for the term of 2023-2024.</P>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5 & CSS</li>
-                <li>Python</li>
-                <li>MySql</li>
-            </ul>
         </div>
-    </section>
+        </section>
+      <section id="sec-2">
+        <div>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <a href="https://github.com/thanyagangesh/CODSOFT">Simple Calculator</a>
-                <p>It is a simple calculator made using html,css and javascript</p>
+          <p>+91 7618762927</p>
+          <address>thanya.gangesh13@gmail.com</address>
+          <br>
+          <section id="resume">
+            <div style="font-size: 1em; margin: 10px 0;">
+                <a href="https://docs.google.com/document/d/1cWQZJkrlI7jvHdphxEepZ0tKEB-lwHCy/edit?usp=sharing&ouid=105535339645945446260&rtpof=true&sd=true" download="resume.pdf">View Resume</a>
             </div>
+        </section>
+        
         </div>
-    </section>
-
-    <section id="resume">
-        <div class="container">
-            <h2>Resume</h2>
-            <p>Download my <a href="../resume.docx" download>resume (PDF)</a> to learn more about my professional experience and qualifications.</p>
+        <div>
+          <h3>Skills</h3>
+          <ul class="skill-list">
+            <li>Data Structures & Algorithms</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>HTML, CSS and JavaScript</li>
+            <li>Java</li>
+          </ul>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: thanya.gangesh13@gmail.com</p>
-            <p>Phone: +91 7618762925 </p>
+        <div>
+          <h3>Languages</h3>
+          <ul class="lang-list">
+            <li>Kannada</li>
+            <li>English</li>
+            <li>Hindi</li>
+          </ul>
         </div>
-    </section>
-
+      </section>
+    </main>
     <footer>
         <div class="container">
-            <p>&copy; 2023 Thanya Gangesh | <a href="#">Privacy Policy</a></p>
+            <p>&copy; 2023 Thanya Gangesh</p>
         </div>
     </footer>
-</body>
+  </body>
 </html>

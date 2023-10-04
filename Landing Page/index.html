@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page</title>
+    <style>
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #CAF7E3;
+}
+header {
+    background-color: #116A7B;
+    color: #CAF7E3;
+    padding: 10px;
+}
+h1{
+  padding-left:35px;
+}
+nav ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    text-align: left;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #E4BAD4;
+}
+
+/* Hero section styles */
+#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-content {
+    background-color: #116A7B;
+    padding: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E4BAD4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Dessert section styles */
+#desserts {
+    background-color: #116A7B;
+    text-align: center;
+}
+
+.dessert-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dessert {
+    width: 30%; 
+    margin: 20px;
+    padding: 20px;
+    background-color: #E3F4F4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #116A7B;
+}
+
+.dessert img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #116A7B;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SweetEuphoria Desserts & Co.</h1>
+        <nav>
+            <ul>
+                <li><a href="#desserts">Desserts</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Our Latest Product</h2>
+            <p>Elevate Your Sweet Moments with Soufflé Perfection!</p>
+            <a href="#contact" class="cta-button">Soufflé</a>
+        </div>
+    </section>
+    <section id="desserts">
+      <h2>Popular Desserts</h2>
+      <div class="dessert-container">
+          <div class="dessert">
+              <img src="https://en.wikipedia.org/wiki/Tiramisu#/media/File:Tiramisu_-_Raffaele_Diomede.jpg" alt="Dessert 1">
+              <h3>Tiramisu</h3>
+              <p>A classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.</p>
+          </div>
+          <div class="dessert">
+              <img src="dessert2.jpg" alt="Dessert 2">
+              <h3>Chocolate Cake</h3>
+              <p>A rich and decadent chocolate cake, perfect for chocolate lovers.</p>
+          </div>
+          <div class="dessert">
+              <img src="dessert3.jpg" alt="Dessert 3">
+              <h3>Ice Cream Sundae</h3>
+              <p>A delightful combination of ice cream, whipped cream, and various toppings.</p>
+          </div>
+      </div>
+  </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We're on a mission to sweeten your life, one bite at a time. Established with a passion for indulgence and a commitment to quality, we have been crafting delectable desserts that ignite joy and satisfy cravings.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us!</p>
+        <a href="mailto:contact@example.com" class="cta-button">Contact</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Company. All rights
 
